@@ -1,0 +1,219 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('1_6Jp3vJWe7VFlFHZ9WhSJng.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.hero h1:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+.hero p {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.hero p:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.welcome-box {
+    background-color: rgba(85, 85, 85, 0.8); /* Light background with slight opacity */
+    color: black; /* Text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    text-align: center;
+    margin-bottom: 180px;
+    transition: background-color 0.3s;
+}
+.service-part{
+    background-color: rgba(85, 85, 85, 0.8); /* Light background with slight opacity */
+    color: black; /* Text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    text-align: center;
+    margin-bottom: 180px;
+    transition: background-color 0.3s;
+}
+.welcome-box:hover {
+    background-color: rgba(119, 119, 119, 0.8);
+}
+
+.service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+}
+
+.service-box {
+    background-color: rgba(85, 85, 85, 0.8);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.service-box:hover {
+    background-color: rgba(119, 119, 119, 0.8);
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.section h1:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+.section p, .section ul {
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.section p:hover, .section ul li:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+.section ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.section ul ul {
+    padding-left: 20px; /* Indent nested lists */
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        font-size: 16px;
+    }
+
+    .welcome-box {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .section h1 {
+        font-size: 28px;
+    }
+
+    .section p, .section ul {
+        font-size: 16px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
